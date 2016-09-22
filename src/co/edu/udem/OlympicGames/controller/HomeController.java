@@ -21,7 +21,7 @@ public class HomeController {
 	
 	public List<HomeDTO> homeDtoPopulator(){
 		
-		List<HomeDTO> homeDTOList = new ArrayList<>();
+		List<HomeDTO> homeDTOList = new ArrayList<HomeDTO>();
 		HomeDTO homeDTO = new HomeDTO();
 		homeDTO.setTitle("Arenas");
 		homeDTO.setImage("http://lorempixel.com/300/300/");
@@ -31,7 +31,7 @@ public class HomeController {
 		HomeDTO homeDTO1 = new HomeDTO();
 		homeDTO1.setTitle("Atletas");
 		homeDTO1.setImage("http://lorempixel.com/300/300/");
-		homeDTO1.setUrl("#");
+		homeDTO1.setUrl("athletes");
 		homeDTOList.add(homeDTO1);
 		
 		HomeDTO homeDTO2 = new HomeDTO();

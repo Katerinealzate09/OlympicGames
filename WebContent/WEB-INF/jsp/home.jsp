@@ -24,8 +24,8 @@
 	<div class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<div class="navbar-header">
-				<img class="icon img-responsive" href="#"
-					src="http://lorempixel.com/180/180/">
+				<a href="home" ><img class="icon img-responsive" 
+					src="http://lorempixel.com/500/500/"></a>
 			</div>
 		</div>
 	</div>
