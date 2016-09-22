@@ -1,0 +1,64 @@
+@CHARSET "ISO-8859-1";
+
+.imagen {
+  padding: 30px 10px 10px 10px;
+  border-radius: 50px;
+  background-color: #F2F2F2;
+}
+body {
+  background-image: url("http://cdn29.us1.fansshare.com/pictures/tumblrbackgrounds/pink-floral-tumblr-backgroundsawsome-backgrounds-wallpapers-tumblr-backgrounds-pink-bsu-vintage-491532314.jpg");
+}
+.icon {
+  width: 40px;
+  padding-top: 5px;
+}
+.bullet-point {
+  width: 70px;
+  padding-top: 10px;
+}
+.container .users .user {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.container .users .user .content-user {
+  background-color: gainsboro;
+  border-radius: 40px;
+  padding-top: 10px;
+}
+.container .users .user .content-user .image {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container .users .user .content-user .name h3 {
+  color: #0f0f0f;
+}
+.container .users .user .content-user .name h4 {
+  color: #444444;
+}
+.container .posts .post {
+  padding-top: 20px;
+}
+.container .posts .post .content-post {
+  background-color: gainsboro;
+  border-radius: 40px;
+  padding-top: 10px;
+}
+.container .posts .post .content-post .user {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .posts .post .content-post .message-post {
+  padding-bottom: 10px;
+}
+.container .comments .comment {
+  padding-top: 10px;
+}
+.container .comments .comment .other-class {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ebebeb;
+  border-radius: 50px;
+}
+.container .comments .comment .other-class .container-comment {
+  border-radius: 50px;
+}
