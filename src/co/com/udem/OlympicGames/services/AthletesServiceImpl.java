@@ -3,13 +3,17 @@ package co.com.udem.OlympicGames.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import co.com.udem.OlympicGames.jpa.dao.AthleteDAO;
+import co.com.udem.OlympicGames.jpa.dao.AthleteDAOImpl;
 import co.com.udem.OlympicGames.model.AthletesDTO;
 
 public class AthletesServiceImpl implements AthlestesServiceInterface{
 
 	@Override
 	public List<AthletesDTO> getAthletes() {
-		List<AthletesDTO> athletesDTOList = new ArrayList<AthletesDTO>();
+		/*List<AthletesDTO> athletesDTOList = new ArrayList<AthletesDTO>();
 		AthletesDTO athletesDTO = new AthletesDTO();
 		athletesDTO.setImage("http://lorempixel.com/500/500/");
 		athletesDTO.setName("Mariana Pajon");
@@ -38,7 +42,17 @@ public class AthletesServiceImpl implements AthlestesServiceInterface{
 		athletesDTO3.setNationality("USA");
 		athletesDTOList.add(athletesDTO3);
 		
-		return athletesDTOList;
+		return athletesDTOList;*/
+	return null;
+	}
+
+	@Override
+	public List<AthletesDTO> getAthletesJPA() {
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Spring-Datasource-JPA.xml"); 
+		 List<AthletesDTO> athletesDTOList = new ArrayList<AthletesDTO>();
+		 AthleteDAO athleteDAO = (AthleteDAO)context.getBean(AthleteDAOImpl.class);
+		 athletesDTOList = athleteDAO.findAthleteDTO();
+		 return athletesDTOList;
 	}
 
 }

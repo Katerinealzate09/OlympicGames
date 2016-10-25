@@ -10,14 +10,17 @@ import org.springframework.web.servlet.ModelAndView;
 import co.com.udem.OlympicGames.model.HomeDTO;
 import co.com.udem.OlympicGames.services.HomeServiceImpl;
 import co.com.udem.OlympicGames.services.HomeServiceInterface;
+import co.com.udem.OlympicGames.services.OlympicServiceFacade;
 
 @Controller
 public class HomeController {
 	
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public ModelAndView home(){
-		HomeServiceInterface homeServicesInterface = new HomeServiceImpl();
-		List<HomeDTO> homeDTO = homeServicesInterface.getHome();
+		OlympicServiceFacade olympicServiceFacade = new OlympicServiceFacade();
+		List<HomeDTO>homeDTO = olympicServiceFacade.getHomeJPA();
+		//HomeServiceInterface homeServicesInterface = new HomeServiceImpl();
+		//List<HomeDTO> homeDTO = homeServicesInterface.getHome();
 		 return new ModelAndView("home", "command", homeDTO);
 	}
 

@@ -3,13 +3,17 @@ package co.com.udem.OlympicGames.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import co.com.udem.OlympicGames.jpa.dao.HomeDAO;
+import co.com.udem.OlympicGames.jpa.dao.HomeDAOImpl;
 import co.com.udem.OlympicGames.model.HomeDTO;
 
 public class HomeServiceImpl implements HomeServiceInterface{
 
 	@Override
 	public List<HomeDTO> getHome() {
-		List<HomeDTO> homeDTOList = new ArrayList<HomeDTO>();
+		/*List<HomeDTO> homeDTOList = new ArrayList<HomeDTO>();
 		HomeDTO homeDTO = new HomeDTO();
 		homeDTO.setTitle("Arenas");
 		homeDTO.setImage("http://lorempixel.com/300/300/");
@@ -34,6 +38,17 @@ public class HomeServiceImpl implements HomeServiceInterface{
 		homeDTO3.setUrl("news");
 		homeDTOList.add(homeDTO3);
 		
+		return homeDTOList;*/
+		return null;
+	}
+
+	@Override
+	public List<HomeDTO> getHomeJPA() {
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Spring-Datasource-JPA.xml"); 
+		
+		List<HomeDTO>homeDTOList = new ArrayList<HomeDTO>();
+		HomeDAO homeDAO =(HomeDAO)context.getBean(HomeDAOImpl.class);
+		homeDTOList = homeDAO.findHomeDTO();
 		return homeDTOList;
 	}
 }

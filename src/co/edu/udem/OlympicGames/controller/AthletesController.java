@@ -10,14 +10,17 @@ import org.springframework.web.servlet.ModelAndView;
 import co.com.udem.OlympicGames.model.AthletesDTO;
 import co.com.udem.OlympicGames.services.AthlestesServiceInterface;
 import co.com.udem.OlympicGames.services.AthletesServiceImpl;
+import co.com.udem.OlympicGames.services.OlympicServiceFacade;
 
 @Controller
 public class AthletesController {
 	
 	@RequestMapping(value = "/athletes", method = RequestMethod.GET)
 	public ModelAndView athletes(){
-		AthlestesServiceInterface athlestesServiceInterface  = new AthletesServiceImpl();
-		List<AthletesDTO> athletesDTO = athlestesServiceInterface.getAthletes();
+		OlympicServiceFacade olympicServiceFacade = new OlympicServiceFacade();
+		List<AthletesDTO> athletesDTO = olympicServiceFacade.geAthletesJPA();
+		//AthlestesServiceInterface athlestesServiceInterface  = new AthletesServiceImpl();
+		//List<AthletesDTO> athletesDTO = athlestesServiceInterface.getAthletes();
 		return new ModelAndView("athletes", "command", athletesDTO);
 	}
 
