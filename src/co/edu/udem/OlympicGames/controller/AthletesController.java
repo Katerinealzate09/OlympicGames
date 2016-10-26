@@ -18,7 +18,7 @@ public class AthletesController {
 	@RequestMapping(value = "/athletes", method = RequestMethod.GET)
 	public ModelAndView athletes(){
 		OlympicServiceFacade olympicServiceFacade = new OlympicServiceFacade();
-		List<AthletesDTO> athletesDTO = olympicServiceFacade.geAthletesJPA();
+		List<AthletesDTO> athletesDTO = olympicServiceFacade.getAthletesJPA();
 		//AthlestesServiceInterface athlestesServiceInterface  = new AthletesServiceImpl();
 		//List<AthletesDTO> athletesDTO = athlestesServiceInterface.getAthletes();
 		return new ModelAndView("athletes", "command", athletesDTO);

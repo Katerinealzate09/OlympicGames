@@ -16,7 +16,7 @@ public class OlympicServiceFacade {
 		HomeServiceInterface homeServicesInterface = new HomeServiceImpl();
 		return homeServicesInterface.getHomeJPA();
 	}
-	public List<AthletesDTO>geAthletesJPA(){
+	public List<AthletesDTO>getAthletesJPA(){
 		AthlestesServiceInterface athlestesServicesInterface = new AthletesServiceImpl();
 		return athlestesServicesInterface.getAthletesJPA();
 	}
