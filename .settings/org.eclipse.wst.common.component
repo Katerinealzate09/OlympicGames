@@ -9,7 +9,7 @@
         <dependent-module archiveName="OlympicGames_common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/OlympicGames_common/OlympicGames_common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <property name="context-root" value="OlympicGames"/>
         <property name="java-output-path" value="/OlympicGames/build/classes"/>
+        <property name="context-root" value="OlympicGames"/>
     </wb-module>
 </project-modules>
