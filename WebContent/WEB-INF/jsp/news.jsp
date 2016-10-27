@@ -29,7 +29,7 @@
 			</div>
 			<div class="navbar-right">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="inactive"><a href="#">Arenas</a></li>
+					<li class="inactive"><a href="arenas">Arenas</a></li>
 					<li class="inactive"><a href="athletes">Atletas</a></li>
 					<li class="inactive"><a href="#">Medallas</a></li>
 					<li class="active"><a href="news">Noticias</a></li>
