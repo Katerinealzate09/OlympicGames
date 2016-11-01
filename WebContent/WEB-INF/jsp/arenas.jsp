@@ -31,7 +31,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="arenas">Arenas</a></li>
 					<li class="inactive"><a href="athletes">Atletas</a></li>
-					<li class="inactive"><a href="#">Medallas</a></li>
+					<li class="inactive"><a href="medal">Medallas</a></li>
 					<li class="inactive"><a href="news">Noticias</a></li>
 				</ul>
 			</div>
