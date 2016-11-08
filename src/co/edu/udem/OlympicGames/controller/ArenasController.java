@@ -16,7 +16,7 @@ public class ArenasController {
 	@RequestMapping(value = "/arenas", method = RequestMethod.GET)
 	public ModelAndView arenas(){
 		OlympicServiceFacade olympicServiceFacade = new OlympicServiceFacade();
-		List<ArenasDTO>arenaDTO = olympicServiceFacade.getArenasJPA();
+		List<ArenasDTO>arenaDTO = olympicServiceFacade.getArenasWS();
 		return new ModelAndView("arenas","command", arenaDTO);
 	}
 }

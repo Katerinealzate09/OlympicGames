@@ -16,7 +16,7 @@ public class MedalController {
 	@RequestMapping(value = "/medal", method = RequestMethod.GET)
 	public ModelAndView Medal(){
 		OlympicServiceFacade olympicServiceFacade = new OlympicServiceFacade();
-		List<MedalDTO>medalDTO = olympicServiceFacade.getMedalJPA();
+		List<MedalDTO>medalDTO = olympicServiceFacade.getMedalWS();
 		return new ModelAndView("medal", "command", medalDTO);
 	}
 	
