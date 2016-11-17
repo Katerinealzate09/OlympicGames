@@ -1,79 +1,97 @@
 @CHARSET "ISO-8859-1";
 
-
 .imagen {
-  padding: 30px 10px 10px 10px;
-  border-radius: 50px;
-  background-color: #F2F2F2;
+	padding: 30px 10px 10px 10px;
+	border-radius: 50px;
+	background-color: #F2F2F2;
 }
-img.mediana{
-  width: 300px; height: 230px;
+
+img.mediana {
+	width: 300px;
+	height: 230px;
 }
-img.pequena{
-  width: 200px; height: 180px;
+
+img.pequena {
+	width: 200px;
+	height: 180px;
 }
+
 img.noticia {
 	width: 200px;
 	height: 130px;
-	 border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    border-color : grey;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	border-color: grey;
 }
 
 body {
-  background-image: url("http://backwallpapers.com/wp-content/uploads/2016/08/Rio-Olympics-Mascot-2016-Desktop-Wallpaper-1576x1080.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-size: contain;*/
+	background-image:
+		url("http://backwallpapers.com/wp-content/uploads/2016/08/Rio-Olympics-Mascot-2016-Desktop-Wallpaper-1576x1080.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-size: contain;*/
 }
+
 .bullet-point {
-  width: 70px;
-  padding-top: 10px;
+	width: 70px;
+	padding-top: 10px;
 }
+
 .container .users .user {
-  padding-top: 20px;
-  padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
+
 .container .users .user .content-user {
-  background-color: gainsboro;
-  border-radius: 40px;
-  padding-top: 10px;
+	background-color: gainsboro;
+	border-radius: 40px;
+	padding-top: 10px;
 }
+
 .container .users .user .content-user .image {
-  padding-top: 30px;
-  padding-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
+
 .container .users .user .content-user .name h3 {
-  color: #0f0f0f;
+	color: #0f0f0f;
 }
+
 .container .users .user .content-user .name h4 {
-  color: #444444;
+	color: #444444;
 }
+
 .container .posts .post {
-  padding-top: 20px;
+	padding-top: 20px;
 }
+
 .container .posts .post .content-post {
-  background-color: gainsboro;
-  border-radius: 40px;
-  padding-top: 10px;
+	background-color: gainsboro;
+	border-radius: 40px;
+	padding-top: 10px;
 }
+
 .container .posts .post .content-post .user {
-  padding-top: 20px;
-  padding-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+
 .container .posts .post .content-post .message-post {
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
+
 .container .comments .comment {
-  padding-top: 10px;
+	padding-top: 10px;
 }
+
 .container .comments .comment .other-class {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #ebebeb;
-  border-radius: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #ebebeb;
+	border-radius: 50px;
 }
+
 .container .comments .comment .other-class .container-comment {
-  border-radius: 50px;
+	border-radius: 50px;
 }
