@@ -21,22 +21,31 @@
 </head>
 <body>
 
-	<div class="navbar navbar-default navbar-static-top">
+	<div class="navbar navbar-light navbar-static-top"
+		style="background-color: #F9FAFA;">
 		<div class="container">
-			<div class="navbar-header">
-				<a href="home"><img class="icon img-responsive"
-					src="http://lorempixel.com/500/500/"></a>
+			<div class="navbar-header" class="navbar-brand">
+				<a href="home"><img src="resources/img/Logo.png" width="50"
+					height="45"> </a> <a href="home"><span
+					class="navbar-text navbar-right ">Juegos Olimpicos 2016</span></a>
 			</div>
-			<div class="navbar-right">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="arenas">Arenas</a></li>
-					<li class="inactive"><a href="athletes">Atletas</a></li>
-					<li class="inactive"><a href="medal">Medallas</a></li>
-					<li class="inactive"><a href="news">Noticias</a></li>
+			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+				<ul class="nav nav-tabs navbar-right">
+					<li class="active"><a class="nav-link" href="arenas">Arenas
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="athletes">Atletas</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="medal">Medallas</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="news">Noticias</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
+	<!-- Title -->
 	<div class="section">
 		<div class="container">
 			<div class="row">
@@ -44,8 +53,6 @@
 					<h1 class="text-center">
 						<b>Arenas Juegos Olimpicos Río 2016</b>
 					</h1>
-					<h2 class="col-md-8 col-md-offset-2 text-center">Un Nuevo
-						Mundo</h2>
 				</div>
 			</div>
 		</div>
@@ -56,12 +63,12 @@
 				<c:forEach var="dto" items="${command}">
 					<div class="items">
 						<div class="item col-md-3">
-							<div class="imagen">
-								 <a href="${dto.url}"><img src="${dto.image}"
-									class="center-block img-responsive img-thumbnail">
-									<h1 class="text-center">${dto.title}</h1>
-								</a>
-							</div>
+								<div class="imagen col-md-12">
+									<a href="${dto.url}"><img src="${dto.image}"
+										class="center-block img-responsive img-thumbnail">
+										<h1 class="text-center">${dto.title}</h1> </a>
+								</div>
+							
 						</div>
 					</div>
 				</c:forEach>

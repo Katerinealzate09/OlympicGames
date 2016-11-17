@@ -1,16 +1,31 @@
 @CHARSET "ISO-8859-1";
 
+
 .imagen {
   padding: 30px 10px 10px 10px;
   border-radius: 50px;
   background-color: #F2F2F2;
 }
-body {
-  background-image: url("http://cdn29.us1.fansshare.com/pictures/tumblrbackgrounds/pink-floral-tumblr-backgroundsawsome-backgrounds-wallpapers-tumblr-backgrounds-pink-bsu-vintage-491532314.jpg");
+img.mediana{
+  width: 300px; height: 230px;
 }
-.icon {
-  width: 40px;
-  padding-top: 5px;
+img.pequena{
+  width: 200px; height: 180px;
+}
+img.noticia {
+	width: 200px;
+	height: 130px;
+	 border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    border-color : grey;
+}
+
+body {
+  background-image: url("http://backwallpapers.com/wp-content/uploads/2016/08/Rio-Olympics-Mascot-2016-Desktop-Wallpaper-1576x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-size: contain;*/
 }
 .bullet-point {
   width: 70px;

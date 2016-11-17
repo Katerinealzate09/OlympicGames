@@ -26,6 +26,7 @@ public class OlympicServiceFacade {
 
 	public OlympicServiceFacade() {
 
+		
 	}
 
 	public static OlympicServiceFacade getInstance() {

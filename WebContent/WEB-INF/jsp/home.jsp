@@ -20,24 +20,29 @@
 <link href="resources/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<!-- Barrra de navegacion -->
 
-	<div class="navbar navbar-default navbar-static-top">
+	<div class="navbar navbar-light navbar-static-top"
+		style="background-color: #F9FAFA;">
 		<div class="container">
-			<div class="navbar-header">
-				<a href="home" ><img class="icon img-responsive" 
-					src="http://lorempixel.com/500/500/"></a>
+			<div class="navbar-header" class="navbar-brand">
+				<a href="home"><img src="resources/img/Logo.png" width="50"
+					height="45"> </a> <a href="home"><span
+					class="navbar-text navbar-right ">Juegos Olimpicos 2016</span></a>
 			</div>
 		</div>
 	</div>
+
+	<!-- Titulo -->
 	<div class="section">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="text-center">
-						<b>Juegos Olimpicos Río 2016</b>
+					<h1 class="text-left">
+						<img alt="Juegos Olympicos Rio" src="resources/img/logoRio.png" width="500" height="300">
 					</h1>
-					<h2 class="col-md-8 col-md-offset-2 text-center">Un Nuevo
-						Mundo</h2>
+					<!--  <h2 class="col-md-8 col-md-offset-2 text-center">Un Nu evo
+						Mundo</h2>-->
 				</div>
 			</div>
 		</div>
@@ -50,7 +55,7 @@
 						<div class="item col-md-3">
 							<div class="imagen">
 								 <a href="${dto.url}"><img src="${dto.image}"
-									class="center-block img-responsive img-thumbnail">
+									class="center-block img-responsive img-thumbnail mediana">
 									<h1 class="text-center">${dto.title}</h1>
 								</a>
 							</div>

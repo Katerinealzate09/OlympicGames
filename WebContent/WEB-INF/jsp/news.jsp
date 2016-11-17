@@ -21,18 +21,26 @@
 </head>
 <body>
 	<!-- NAVBAR -->
-	<div class="navbar navbar-default navbar-static-top">
+	<div class="navbar navbar-light navbar-static-top"
+		style="background-color: #F9FAFA;">
 		<div class="container">
-			<div class="navbar-header">
-				<a href="home" ><img class="icon img-responsive" 
-					src="http://lorempixel.com/500/500/"></a>
+			<div class="navbar-header" class="navbar-brand">
+				<a href="home"><img src="resources/img/Logo.png" width="50"
+					height="45"> </a> <a href="home"><span
+					class="navbar-text navbar-right ">Juegos Olimpicos 2016</span></a>
 			</div>
-			<div class="navbar-right">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="inactive"><a href="arenas">Arenas</a></li>
-					<li class="inactive"><a href="athletes">Atletas</a></li>
-					<li class="inactive"><a href="medal">Medallas</a></li>
-					<li class="active"><a href="news">Noticias</a></li>
+			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+				<ul class="nav nav-tabs navbar-right">
+					<li class="nav-item"><a class="nav-link" href="arenas">Arenas</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="athletes">Atletas</a>
+					</li>
+
+					<li class="nav-item"><a class="nav-link" href="medal">Medallas</a>
+					</li>
+					<li class="active"><a class="nav-link" href="news">Noticias
+							<span class="sr-only">(current)</span>
+					</a></li>
 				</ul>
 			</div>
 		</div>
@@ -50,12 +58,13 @@
 			<c:forEach var="dto" items="${command}">
 				<div class="post col-md-12">
 					<div class="content-post col-md-12">
-						<div class="number col-md-1 ">
-							<img class="bullet-point center-block" src="${dto.image}" alt="">
+						<div class="number col-md-3 ">
+							<img class="bullet-point center-block img-responsive noticia" src="${dto.image}" alt="">
 						</div>
-						<div class="message-post col-md-11">
+						<div class="message-post col-md-9">
 							<h3>${dto.title}</h3>
 							<h5>${dto.description}</h5>
+							<a href="${dto.newsUrl}"><h6  class="text-right">Ver mas</h6></a>
 						</div>
 					</div>
 				</div>

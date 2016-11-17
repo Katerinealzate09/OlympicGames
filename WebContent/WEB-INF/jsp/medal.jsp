@@ -20,18 +20,25 @@
 <link href="resources/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="navbar navbar-default navbar-static-top">
+	<div class="navbar navbar-light navbar-static-top"
+		style="background-color: #F9FAFA;">
 		<div class="container">
-			<div class="navbar-header">
-				<a href="home"><img class="icon img-responsive"
-					src="http://lorempixel.com/500/500/"></a>
+			<div class="navbar-header" class="navbar-brand">
+				<a href="home"><img src="resources/img/Logo.png" width="50"
+					height="45"> </a> <a href="home"><span
+					class="navbar-text navbar-right ">Juegos Olimpicos 2016</span></a>
 			</div>
-			<div class="navbar-right">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="inactive"><a href="arenas">Arenas</a></li>
-					<li class="inactive"><a href="athletes">Atletas</a></li>
-					<li class="active"><a href="medal">Medallas</a></li>
-					<li class="inactive"><a href="news">Noticias</a></li>
+			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+				<ul class="nav nav-tabs navbar-right">
+					<li class="nav-item"><a class="nav-link" href="arenas">Arenas</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="athletes">Atletas</a>
+					</li>
+					<li class="active"><a class="nav-link" href="medal">Medallas
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="news">Noticias</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -39,11 +46,11 @@
 	<!--TITLE-->
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<h1>Medal</h1>
+			<h1>Medallas</h1>
 		</div>
 	</div>
 	<div class="container" id="content">
-		<!-- SEARCH -->
+		<!-- SEARCH
 		<div class="row search">
 			<div class="col-md-offset-3 col-md-6">
 				<form role="form">
@@ -57,7 +64,7 @@
 					</div>
 				</form>
 			</div>
-		</div>
+		</div> -->
 		<!-- USERS -->
 		<div class="row users">
 			<!-- USER -->
